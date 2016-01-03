@@ -1,4 +1,4 @@
-# CourseraMLAssignments
+# Coursera Machine Learning Course Notes
 
 Week 7 (Unsupervised Learning and Clustering)
 -
