@@ -7,4 +7,4 @@ Week 7 (Unsupervised Learning and Clustering)
 * When **picking the number of clusters**, it's worth a shot to use the *Elbow Method*, but don't count on it.
 * Dimentionality Reduction
 *   When the dataset can be projected into **lower dimentionality** (say 2D data points seem to be on a straight line), it's effective to project it onto that lower dimentionality and get better performance\a way to visualze the data.
-*   Principal Component Analysis is a way to automatically do the former. It basically means that to reduce the dimentionality to K, we simply find a set of K vectors which have minimal distance from *all* data points. These make up a K-dimetional plane which we project the data onto.
+*   **Principal Component Analysis** is a way to automatically do the former. It basically means that to reduce the dimentionality to K, we simply find a set of K vectors which have minimal distance from *all* data points. These make up a K-dimetional plane which we project the data onto.
