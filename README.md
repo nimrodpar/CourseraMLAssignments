@@ -8,3 +8,4 @@ Week 7 (Unsupervised Learning and Clustering)
 * **Dimentionality Reduction**
  * When the dataset can be projected into lower dimentionality (say 2D data points seem to be on a straight line), it's effective to project it onto that lower dimentionality and get better performance\a way to visualze the data.
  * **Principal Component Analysis** is a way to automatically do the former. It basically means that to reduce the dimentionality to K, we simply find a set of K vectors which have minimal distance from *all* data points. These make up a K-dimetional plane which we project the data onto.
+   * Make sure you run PCA (and produce the K vectors a.k.a. Ureduce) on the *training set only*, and not on the cross validation or test set.
