@@ -10,3 +10,4 @@ Week 7 (Unsupervised Learning and Clustering)
  * **Principal Component Analysis** is a way to automatically do the former. It basically means that to reduce the dimentionality to K, we simply find a set of K vectors which have minimal distance from *all* data points. These make up a K-dimetional plane which we project the data onto.
    * To choose the best K, use the SVD decomposition of Sigma `[U,S,V] = svd(Sigma)` and find a K s.t. `(S11 * ... * Skk) / (S11 * ... * Snn) >= 0.95` i.e. this K will retain 95% of the variance.
    * Make sure you run PCA (and produce the K vectors a.k.a. Ureduce) on the *training set only*, and not on the cross validation or test set.
+   * PCA should not be used to prevent over-fitting! (on the rational that: fewer features ==> less overfitting).
