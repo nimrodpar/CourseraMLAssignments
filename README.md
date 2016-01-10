@@ -17,4 +17,5 @@ Week 8 (Anomaly Detection)
 * In order to evaluate how well the anomaly prediction performs:
   * Split the good (non-anomaly) exampled of your data set 60-20-20% between the traning, cv and test sets respectively.
   * Split the bad examples (anomalies) 50-50% between the cv and test sets.
-  * Use the Precision/Recall or the F1 metric to evaluate the performance of your model on the cv or test set.
+  * Use the Precision/Recall or the F1 metric to evaluate the performance of your model on the cv or test set. 
+* Pick the value of `Epsilon` which **maximizes** the evaluation metric.
