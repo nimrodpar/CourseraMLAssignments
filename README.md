@@ -23,3 +23,4 @@ Week 8 (Anomaly Detection)
   * If you have a fairly large number of positive and negative examples to for the model, and predict that the future examples will look similar to the data set, then use SL.
   * If you have a small number of anomalies, in comparision to the number of good examples, and have no idea whether the future examples will look similar to the anomalies you already have, then use AD, since it's better at prediction "what's not good".
 * If you look at your features and they are not distributed on a Gausian, you can benefit from transformaing the feature into a Gausian, for instance by using either `log(x+c)` or `x^c`, where you play with `c` until you get the best looking Gausian. 
+* If your AD system reports many anomalies as good examples, try coming up with more features (these can be extrpolated from existing features) that better reflect anomalies (i.e. get a very high or low value).
