@@ -11,3 +11,10 @@ Week 7 (Unsupervised Learning and Clustering)
    * To choose the best K, use the SVD decomposition of Sigma `[U,S,V] = svd(Sigma)` and find a K s.t. `(S11 * ... * Skk) / (S11 * ... * Snn) >= 0.95` i.e. this K will retain 95% of the variance.
     * Make sure you run PCA (and produce the K vectors a.k.a. `Ureduce`) on the *training set only*, and not on the cross validation or test set.
     * PCA should not be used to prevent over-fitting! (this bad idea stems from the rational that fewer features ==> less overfitting).
+
+Week 8 (Anomaly Detection)
+-
+* In order to evaluate how well the anomaly prediction performs:
+  * Split the good (non-anomaly) exampled of your data set 60-20-20% between the traning, cv and test sets respectively.
+  * Split the bad examples (anomalies) 50-50% between the cv and test sets.
+  * Use the Precision/Recall or the F1 metric to evaluate the performance of your model on the cv or test set.
