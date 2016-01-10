@@ -1,7 +1,8 @@
 # Coursera Machine Learning Course Notes
 
-Week 7 (Unsupervised Learning and Clustering)
--
+Tese are mainly caveats and anacdotes from the Machine Learning course at Coursera. These are *not* detailed lecture notes (the excercises contain most of notes already).
+
+## Week 7 (Unsupervised Learning and Clustering)
 * The **Cost Function** (a.k.a *distortion*) for k-means *should never grow*. Every step of the algorithm (either repositioning the centroids of picking a new cluster for each of the points) should only decreas the cost.
 * **Random Initialization** determines the how well the classification fits the data. If you have a small number of clusters (K = 2..10) then it's worth running k-means several (100) times to try and find the best classification. However is K is in the hundreds, it is pointless and usually a single run will be as good as the rest.
 * When **picking the number of clusters**, it's worth a shot to use the *Elbow Method*, but don't count on it.
@@ -12,8 +13,8 @@ Week 7 (Unsupervised Learning and Clustering)
     * Make sure you run PCA (and produce the K vectors a.k.a. `Ureduce`) on the *training set only*, and not on the cross validation or test set.
     * PCA should not be used to prevent over-fitting! (this bad idea stems from the rational that fewer features ==> less overfitting).
 
-Week 8 (Anomaly Detection)
--
+## Week 8 (Anomaly Detection and Recommender Systems)
+#### Anomaly Detection
 * In order to evaluate how well the anomaly prediction performs:
   * Split the good (non-anomaly) exampled of your data set 60-20-20% between the traning, CV and test sets respectively.
   * Split the bad examples (anomalies) 50-50% between the CV and test sets.
@@ -24,3 +25,5 @@ Week 8 (Anomaly Detection)
   * If you have a small number of anomalies, in comparision to the number of good examples, and have no idea whether the future examples will look similar to the anomalies you already have, then use AD, since it's better at prediction "what's not good".
 * If you look at your features and they are not distributed on a Gausian, you can benefit from transformaing the feature into a Gausian, for instance by using either `log(x+c)` or `x^c`, where you play with `c` until you get the best looking Gausian. 
 * If your AD system reports many anomalies as good examples, try coming up with more features (these can be extrpolated from existing features) that better reflect anomalies (i.e. get a very high or low value).
+
+#### Recommender Systems
