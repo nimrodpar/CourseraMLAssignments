@@ -19,3 +19,4 @@ Week 8 (Anomaly Detection)
   * Split the bad examples (anomalies) 50-50% between the CV and test sets.
   * Use the Precision/Recall or the F1 metric to evaluate the performance of your model on the CV or test set. 
 * Pick the value of `Epsilon` which **maximizes** the evaluation metric on the CV set.
+* Anomaly detection is different from Supervised learning, since the latter requires a fairly large of positive and negative examples to fir the model, where AD is geared towards having a small number of anomalies, in comparision to the number of good examples.
