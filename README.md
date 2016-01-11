@@ -1,6 +1,6 @@
 # Coursera Machine Learning Course Notes
 
-Tese are mainly caveats and anacdotes from the Machine Learning course at Coursera. These are *not* detailed lecture notes (the excercises contain most of notes already).
+These are mainly caveats and anacdotes from the Machine Learning course at Coursera. These are *not* detailed lecture notes (the excercises contain most of notes already).
 
 ## Week 7 (Unsupervised Learning and Clustering)
 * The **Cost Function** (a.k.a *distortion*) for k-means *should never grow*. Every step of the algorithm (either repositioning the centroids of picking a new cluster for each of the points) should only decreas the cost.
