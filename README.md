@@ -28,3 +28,4 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 
 #### Recommender Systems
 * You can extract features automatically in this setting. Say you have already learned the users perefences vector Theta. And you have a new movie with rating R(i) from the users, but you don't know how to extract the features (say is it a romance/action movie? etc.). You can just apply Theta * R(i) and you'll get the features according to the users the model is already trained on. Then you can use these features to create recommendations for other users.
+   * Interestingly, you can do this without really knowing Theta! you can start by guessing Theta, extract features X and then use that to better you initial Theta and so on iteratively.
