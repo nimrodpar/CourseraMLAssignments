@@ -27,3 +27,4 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 * If your AD system reports many anomalies as good examples, try coming up with more features (these can be extrpolated from existing features) that better reflect anomalies (i.e. get a very high or low value).
 
 #### Recommender Systems
+* You can extract features automatically in this setting. Say you have already learned the users perefences vector Theta. And you have a new movie with rating R(i) from the users, but you don't know how to extract the features (say is it a romance/action movie? etc.). You can just apply Theta * R(i) and you'll get the features according to the users the model is already trained on. Then you can use these features to create recommendations for other users.
