@@ -37,5 +37,6 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 * Still, before working hard on getting more data and working efficiently with it, make sure it actually achieves better performance. Plot the J_cost and J_CV curves and see that you indeed have high variance (overfiting to the small dataset) before you increase the dataset.
 * **Stochastic Gradient Descent**: Instead of performing a step (i.e. updating Theta) on *all* of the dataset, just use one example for each step, until you finish going over the entire dataset. Then shuffle the dataset and repeat, etc.
   * To check for convergence, we compute the `cost(Theta,(x(i),y(i)))` *before* taking a step over (x(i),y(i)). Every 100 iteration we average this value and plot a curve to see if the average cost has decreased every 1000 iterations.
+    * If the plotted graphs look too gittery, or seem to not converge or even diverge - just *use a smaller alpha*. 
 * **Mini-batch Gradient Descent**: A compromise of the classic gradient descent and the shotchastic one, do the step over `b` examples at a time (`b` usually in [1,100]). 
   * An advantage of the **mini-batch** gradient decent algorithm, is that it's parallizable (i.e. you can compute over the `b` examples in parralel), in contrast to stochastic gradient decent (where `b=1` essentially). 
