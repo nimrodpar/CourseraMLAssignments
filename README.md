@@ -30,3 +30,8 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 * You can **extract features** automatically in this setting. Say you have already learned the users perefences vector Theta. And you have a new movie with rating R(i) from the users, but you don't know how to extract the features (say is it a romance/action movie? etc.). You can just apply Theta * R(i) and you'll get the features according to the users the model is already trained on. Then you can use these features to create recommendations for other users.
    * Interestingly, you can do this without really knowing Theta! you can start by guessing Theta, extract features X and then use that to better you initial Theta and so on iteratively.
    * You can perform this simultaneously, by minimizing X and Theta together (as the main term in the cost function for both is the same, and you only need to have the regularization for both).
+
+## Week 9 (Large Scale Machine Learning)
+#### Gradient Descent with Large Datasets
+* Motivation: "It's not who has the best algorithm that wins, It's who has the most data."
+* Still, before working hard on getting more data and working efficiently with it, make sure it actually achieves better performance. Plot the J_cost and J_CV curves and see that you indeed have high variance (overfiting to the small dataset) before you increase the dataset.
