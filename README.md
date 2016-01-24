@@ -35,3 +35,4 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 #### Gradient Descent with Large Datasets
 * Motivation: "It's not who has the best algorithm that wins, It's who has the most data."
 * Still, before working hard on getting more data and working efficiently with it, make sure it actually achieves better performance. Plot the J_cost and J_CV curves and see that you indeed have high variance (overfiting to the small dataset) before you increase the dataset.
+* Advantage of the **mini-batch** gradient decent algorithm, is that it's parallizable (i.e. you can compute over the `b` examples in parralel), in contrast to stochastic gradient decent (where `b=1` essentially). 
