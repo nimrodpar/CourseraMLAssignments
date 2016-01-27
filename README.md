@@ -41,3 +41,6 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
   * The algorithm wil never eally "converege", it will keep circling the global minimum near the end. One way of getting a slightly better result is to decrease alpha as you go along, for instance `alpha = const1 / (#iterations + const2)`. Problem is you need to play around until you get good values for const{1,2}. 
 * **Mini-batch Gradient Descent**: A compromise of the classic gradient descent and the shotchastic one, do the step over `b` examples at a time (`b` usually in [1,100]). 
   * An advantage of the **mini-batch** gradient decent algorithm, is that it's parallizable (i.e. you can compute over the `b` examples in parralel), in contrast to stochastic gradient decent (where `b=1` essentially). 
+
+#### Advanced Topics
+* **Online Learning**: If you have a large steady stream of datapoints (like in a online website with lots of users), you can afford to use each datapoint once.
