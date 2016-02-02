@@ -44,3 +44,9 @@ These are mainly caveats and anacdotes from the Machine Learning course at Cours
 
 #### Advanced Topics
 * **Online Learning**: If you have a large steady stream of datapoints (like in a online website with lots of users), you can afford to use each datapoint once.
+
+## Week 11 (Photo OCR)
+* When **Synthesizing data by introducing distrotions**, It usually does not help to add purely random noise to your data (say `x = intesity of pixel` and then `x = x + random noise`). It does help to add noise that represents what could happen in the test set, like bad reception or crowd in cell phone conversations. 
+* Explore how hard it is to get more data. Ask **"how much work is it to get 10x the data we have right now?"** and if the answer is "it's very easy", it's probably a good idea to do that. 
+* A good idea is to mechanise the data collection process by using frameworks like *Mechanical Turk*, etc.
+* When working on on a pipeline system (like OCR when you first have 3 steps like Text Detection, Character Segmentation and Character Recognition), it's a good idea to use **Ceiling Analysis** to figure out in what part to apply efforts. You start by going to the first part and manually providing it with 100% accuracy, and then see how the overall accuracy of the pipeline improves. Then you go to the second stage (while keeping the manual changes in the first part! as these coalesce) and do the same there, and so on. Put your effort on *imporving the parts that improve overall accuracy the most*.
